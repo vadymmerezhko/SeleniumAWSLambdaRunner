@@ -21,7 +21,7 @@ public class TestRunner {
         String command = String.format(
                 //"cmd /c && " +
                //"sh " +
-                String.format("cd \"%s\"; ", projectFolderPath) +
+                String.format("cd \"%s\"\n", projectFolderPath) +
                 "mvn test \"-DtestSuite=%s/%s\" \"-DthreadCount=1\" \"-Dlambda=no\"\n",
                 fileFolderPath, fileName);
 
