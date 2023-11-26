@@ -16,12 +16,12 @@ public class TestRunner {
 
         FileManager.createFile(fileFolderPath, fileName, fileContent);
 
-        System.setProperty("user.dir", projectFolderPath);
+        //System.setProperty("user.dir", projectFolderPath);
 
         String command = String.format(
                 //"cmd /c && " +
-                "sh " +
-                String.format("cd \"%s\"\n", projectFolderPath) +
+               //"sh " +
+                String.format("cd \"%s\"; ", projectFolderPath) +
                 "mvn test \"-DtestSuite=%s/%s\" \"-DthreadCount=1\" \"-Dlambda=no\"\n",
                 fileFolderPath, fileName);
 
