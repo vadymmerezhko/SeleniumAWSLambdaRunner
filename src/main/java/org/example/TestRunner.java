@@ -19,9 +19,9 @@ public class TestRunner {
         System.setProperty("user.dir", projectFolderPath);
 
         String command = String.format(
-                "cmd /c " +
+                //"cmd /c && " +
                 String.format("cd %s ", projectFolderPath) +
-                "&& mvn test \"-DtestSuite=%s/%s\" \"-DthreadCount=1\" \"-Dlambda=no\"",
+                "mvn test \"-DtestSuite=%s/%s\" \"-DthreadCount=1\" \"-Dlambda=no\"",
                 fileFolderPath, fileName);
 
         System.out.println(command);
