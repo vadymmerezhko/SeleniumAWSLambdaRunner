@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38f7719a-163b-4e1d-8b57-eef93eb8e7a9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run-test.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RunTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,13 +203,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700966481615</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Shall command is fixed.">
+      <created>1700966584189</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1700966584189</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AWS Lambda runner is created." />
     <MESSAGE value="Command is fixed." />
     <MESSAGE value="Shell file was added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Shell file was added." />
+    <MESSAGE value="Shall command is fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Shall command is fixed." />
   </component>
 </project>

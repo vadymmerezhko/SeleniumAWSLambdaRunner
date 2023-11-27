@@ -7,7 +7,11 @@ import java.nio.file.Paths;
 
 public class TestRunner {
 
-    public static String run(String projectFolderPath, String className, String methodName) {
+    public String run(String data) {
+        String[] params = data.split(" ");
+        String projectFolderPath = params[0];
+        String className = params[1];
+        String methodName = params[2];
         String fileFolderPath = String.format("%s/src/test/resources", projectFolderPath);
         String fileName = String.format("%s.%s.xml", className, methodName);
         String fileContent = Settings.TEST_NG_METHOD_FILE_TEMPLATE;
