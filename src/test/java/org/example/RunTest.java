@@ -7,6 +7,6 @@ public class RunTest {
     @Test
     public void RunLambdaTest() {
         TestRunner runner = new TestRunner();
-        runner.run(". org.example.Selenium1Test signUp1");
+        runner.run("org.example.Selenium1Test signUp1");
     }
 }
