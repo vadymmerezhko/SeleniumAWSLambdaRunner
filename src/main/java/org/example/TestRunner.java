@@ -18,15 +18,24 @@ public class TestRunner {
         fileContent = fileContent.replace(Settings.METHOD_NAME_PLACEHOLDER, methodName);
 
         String command = "sh clone-project.sh";
+        //String command = "cmd clone-project.bat";
         System.out.println(command);
+
+        String output = CommandLineExecutor.runCommandLine(command);
+        System.out.println("Output 1:\n" + output);
+
+/*        Path currentRelativePath = Paths.get("");
+        String s = currentRelativePath.toAbsolutePath().toString();
+        System.out.println("Current absolute path is: " + s);*/
 
         FileManager.createFile(fileFolderPath, fileName, fileContent);
 
         command = "sh run-test.sh";
+        //command = "cmd run-test.bat";
         System.out.println(command);
 
-        String output = CommandLineExecutor.runCommandLine(command);
-        System.out.println("Output:\n" + output);
+        output = CommandLineExecutor.runCommandLine(command);
+        System.out.println("Output 2:\n" + output);
 
         if (!output.contains("BUILD SUCCESS")) {
             Assert.fail(output);
