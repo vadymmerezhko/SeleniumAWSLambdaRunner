@@ -30,7 +30,7 @@ public class TestRunner {
 
         FileManager.createFile(fileFolderPath, fileName, fileContent);
 
-        command = String.format("sh run-test.sh \"%s\" \"%s\"", className, fileName);
+        command = String.format("sh run-test.sh %s %s", className, fileName);
         //command = "cmd run-test.bat";
         System.out.println(command);
 
