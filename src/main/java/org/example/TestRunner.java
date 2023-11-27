@@ -11,15 +11,18 @@ public class TestRunner {
         String[] params = data.split(" ");
         String className = params[0];
         String methodName = params[1];
-        String fileFolderPath = "src/test/resources";
+        String fileFolderPath = "test/SeleniumAWS/src/test/resources";
         String fileName = String.format("%s.%s.xml", className, methodName);
         String fileContent = Settings.TEST_NG_METHOD_FILE_TEMPLATE;
         fileContent = fileContent.replace(Settings.CLASS_NAME_PLACEHOLDER, className);
         fileContent = fileContent.replace(Settings.METHOD_NAME_PLACEHOLDER, methodName);
 
+        String command = "sh clone-project.sh";
+        System.out.println(command);
+
         FileManager.createFile(fileFolderPath, fileName, fileContent);
 
-        String command = "sh run-test.sh";
+        command = "sh run-test.sh";
         System.out.println(command);
 
         String output = CommandLineExecutor.runCommandLine(command);
