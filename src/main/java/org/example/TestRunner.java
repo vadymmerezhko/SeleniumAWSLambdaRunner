@@ -19,34 +19,36 @@ public class TestRunner {
         fileContent = fileContent.replace(Settings.CLASS_NAME_PLACEHOLDER, className);
         fileContent = fileContent.replace(Settings.METHOD_NAME_PLACEHOLDER, methodName);
 
-/*        String command = "sh clone-project.sh";
-        //String command = "cmd clone-project.bat";
-        System.out.println(command);
+        GitManager.cloneRepository(
+                "https://github.com/vadymmerezhko/SeleniumAWS.git",
+                "SeleniumAWS");
+        System.out.println("Git repository is cloned");
 
-        String output = CommandLineExecutor.runCommandLine(command);
-        System.out.println("Output 1:\n" + output);*/
+        WebFileDownloadManager.download(
+                "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.71/linux64/chrome-linux64.zip",
+                "chrome-linux64.zip");
+        System.out.println("Chrome browser ZIP is downloaded");
 
-        try {
-            Git.cloneRepository()
-                    .setURI("https://github.com/vadymmerezhko/SeleniumAWS.git")
-                    .setDirectory(new File("SeleniumAWS"))
-                    .call();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        WebFileDownloadManager.download(
+                "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.71/linux64/chromedriver-linux64.zip",
+                "chromedriver-linux64.zip");
+        System.out.println("Chrome driver ZIP is downloaded");
 
-/*        Path currentRelativePath = Paths.get("");
-        String s = currentRelativePath.toAbsolutePath().toString();
-        System.out.println("Current absolute path is: " + s);*/
+        ZipManager.unzip("chrome-linux64.zip", "SeleniumAWS/chrome-linux64");
+        System.out.println("Chrome browser ZIP is unzipped");
+
+        ZipManager.unzip("chromedriver-linux64.zip", "SeleniumAWS/chromedriver-linux64");
+        System.out.println("Chrome driver ZIP is unzipped");
 
         FileManager.createFile(fileFolderPath, fileName, fileContent);
+        System.out.println("TestNG file is created");
 
         String command = String.format("sh run-test.sh %s", fileName);
         //command = "cmd run-test.bat";
-        System.out.println(command);
+        System.out.println("Run shell file: " + command);
 
         String output = CommandLineExecutor.runCommandLine(command);
-        System.out.println("Output 2:\n" + output);
+        System.out.println("Output:\n" + output);
 
         if (!output.contains("BUILD SUCCESS")) {
             Assert.fail(output);
