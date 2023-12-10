@@ -1,5 +1,5 @@
-mkdir -p test
-cd test
-rm -rf SeleniumAWS
+sudo yum update -y
+sudo yum istall git -y
+
 git clone https://github.com/vadymmerezhko/SeleniumAWS.git; echo "SeleniumAWS is cloned. "
 

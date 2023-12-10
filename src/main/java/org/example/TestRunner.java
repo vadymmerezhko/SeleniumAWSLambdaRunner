@@ -11,7 +11,7 @@ public class TestRunner {
         String[] params = data.split(" ");
         String className = params[0];
         String methodName = params[1];
-        String fileFolderPath = "test/SeleniumAWS/src/test/resources";
+        String fileFolderPath = "src/test/resources";
         String fileName = String.format("%s.%s.xml", className, methodName);
         String fileContent = Settings.TEST_NG_METHOD_FILE_TEMPLATE;
         fileContent = fileContent.replace(Settings.CLASS_NAME_PLACEHOLDER, className);
