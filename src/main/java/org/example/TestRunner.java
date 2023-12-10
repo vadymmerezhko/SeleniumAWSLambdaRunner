@@ -29,7 +29,7 @@ public class TestRunner {
         try {
             Git.cloneRepository()
                     .setURI("https://github.com/vadymmerezhko/SeleniumAWS.git")
-                    .setDirectory(new File("git"))
+                    .setDirectory(new File("SeleniumAWS"))
                     .call();
         } catch (Exception e) {
             throw new RuntimeException(e);

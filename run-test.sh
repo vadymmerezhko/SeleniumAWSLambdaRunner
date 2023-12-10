@@ -1,4 +1,4 @@
-cd git/SeleniumAWS
+cd SeleniumAWS
 
 sudo yum install unzip -y
 
