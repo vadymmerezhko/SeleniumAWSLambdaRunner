@@ -48,18 +48,20 @@ public class TestRunner {
 
         //command = String.format("sh run-test.sh %s", fileName);
         //command = "cmd run-test.bat";
-        String[] cmd = {
+/*        String[] cmd = {
                 "/bin/sh",
                 "-c",
                 String.format(
                         "cd /tmp/SeleniumAWS;" +
                                 "mvn test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/%s\" " +
                                 "\"-DthreadCount=1\" \"-Dlambda=no\"",
-                        fileName)};
+                        fileName)};*/
 
-        /*        command = String.format(
+/*                String[] cmd  = String.format(
                 "cd \"/tmp/SeleniumAWS\"; mvn test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/%s\" \"-DthreadCount=1\" \"-Dlambda=no\"",
                 fileName);*/
+
+        String[] cmd = {String.format("run-test.sh %s", fileName)};
 
         System.out.println("Run shell file: " + cmd);
         output = CommandLineExecutor.runCommandLine(cmd);
