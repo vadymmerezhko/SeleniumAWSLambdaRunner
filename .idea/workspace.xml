@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38f7719a-163b-4e1d-8b57-eef93eb8e7a9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RunTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -398,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702413430600</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Run test command was fixed.">
+      <created>1702414211269</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1702414211269</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,6 +440,7 @@
     <MESSAGE value="Test was enabled." />
     <MESSAGE value="Unzip folders are updated." />
     <MESSAGE value="Test was disabled." />
-    <option name="LAST_COMMIT_MESSAGE" value="Test was disabled." />
+    <MESSAGE value="Run test command was fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Run test command was fixed." />
   </component>
 </project>
