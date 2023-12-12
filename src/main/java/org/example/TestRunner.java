@@ -49,7 +49,7 @@ public class TestRunner {
         //command = String.format("sh run-test.sh %s", fileName);
         //command = "cmd run-test.bat";
         command = """
-                cd /tmp/SeleniumAWS;
+                cd "/tmp/SeleniumAWS";
                 mvn test "-DtestSuite=/tmp/SeleniumAWS/src/test/resources/$1" "-DthreadCount=1" "-Dlambda=no"
                 """;
 
