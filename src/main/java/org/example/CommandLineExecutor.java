@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 
 public class CommandLineExecutor {
 
-    public static String runCommandLine(String command) {
+    public static String runCommandLine(String[] command) {
         StringBuilder output = new StringBuilder();
         Runtime rt = Runtime.getRuntime();
         Process proc;
