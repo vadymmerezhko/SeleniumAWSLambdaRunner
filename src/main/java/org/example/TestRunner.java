@@ -48,10 +48,8 @@ public class TestRunner {
 
         //command = String.format("sh run-test.sh %s", fileName);
         //command = "cmd run-test.bat";
-        command = String.format("""
-                cd "/tmp/SeleniumAWS"
-                mvn test "-DtestSuite=/tmp/SeleniumAWS/src/test/resources/%s" "-DthreadCount=1" "-Dlambda=no"
-                """,
+        command = String.format(
+                "cd \"/tmp/SeleniumAWS\"; mvn test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/%s\" \"-DthreadCount=1\" \"-Dlambda=no\"",
                 fileName);
 
         System.out.println("Run shell file: " + command);
