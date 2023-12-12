@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="38f7719a-163b-4e1d-8b57-eef93eb8e7a9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run-test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run-test.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -385,7 +384,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702411317751</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Unzip folders are updated.">
+      <created>1702413169134</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1702413169134</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Test was disabled.">
+      <created>1702413430600</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1702413430600</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -419,6 +432,8 @@
     <MESSAGE value="GitManager, ZipManager and WebFileDownloadManager were added." />
     <MESSAGE value="TestNG file creation moved up." />
     <MESSAGE value="Test was enabled." />
-    <option name="LAST_COMMIT_MESSAGE" value="Test was enabled." />
+    <MESSAGE value="Unzip folders are updated." />
+    <MESSAGE value="Test was disabled." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test was disabled." />
   </component>
 </project>

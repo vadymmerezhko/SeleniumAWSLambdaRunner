@@ -46,8 +46,13 @@ public class TestRunner {
         ZipManager.unzip("/tmp/chromedriver-linux64.zip", "/tmp/bin");
         System.out.println("Chrome driver ZIP is unzipped");
 
-        command = String.format("sh run-test.sh %s", fileName);
+        //command = String.format("sh run-test.sh %s", fileName);
         //command = "cmd run-test.bat";
+        command = """
+                cd /tmp/SeleniumAWS || exit
+                mvn test "-DtestSuite=/tmp/SeleniumAWS/src/test/resources/$1" "-DthreadCount=1" "-Dlambda=no"
+                """;
+
         System.out.println("Run shell file: " + command);
         output = CommandLineExecutor.runCommandLine(command);
         System.out.println("Output:\n" + output);
