@@ -40,10 +40,10 @@ public class TestRunner {
                 "/tmp/chromedriver-linux64.zip");
         System.out.println("Chrome driver ZIP is downloaded");
 
-        ZipManager.unzip("/tmp/chrome-linux64.zip", "/tmp/chrome-linux64");
+        ZipManager.unzip("/tmp/chrome-linux64.zip", "/tmp/bin");
         System.out.println("Chrome browser ZIP is unzipped");
 
-        ZipManager.unzip("/tmp/chromedriver-linux64.zip", "/tmp/chromedriver-linux64");
+        ZipManager.unzip("/tmp/chromedriver-linux64.zip", "/tmp/bin");
         System.out.println("Chrome driver ZIP is unzipped");
 
         command = String.format("sh run-test.sh %s", fileName);
