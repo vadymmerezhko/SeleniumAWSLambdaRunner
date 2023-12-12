@@ -61,7 +61,7 @@ public class TestRunner {
                 "cd \"/tmp/SeleniumAWS\"; mvn test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/%s\" \"-DthreadCount=1\" \"-Dlambda=no\"",
                 fileName);*/
 
-        String[] cmd = {String.format("run-test.sh %s", fileName)};
+        String[] cmd = {"run-test.sh"};
 
         System.out.println("Run shell file: " + cmd);
         output = CommandLineExecutor.runCommandLine(cmd);
