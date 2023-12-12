@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38f7719a-163b-4e1d-8b57-eef93eb8e7a9" name="Changes" comment="">
+    <list default="true" id="38f7719a-163b-4e1d-8b57-eef93eb8e7a9" name="Changes" comment="File path is fixed.">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run-test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run-test.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RunTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,17 +47,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/vadym/IdeaProjects/GitHub/SeleniumAWSLabdaTestRunner",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vadym/IdeaProjects/GitHub/SeleniumAWSLabdaTestRunner&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\vadym\IdeaProjects\GitHub\SeleniumAWSLabdaTestRunner" />
@@ -322,8 +324,68 @@
       <option name="project" value="LOCAL" />
       <updated>1701060155864</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Class name param is fixed.">
+      <created>1702169659493</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1702169659493</updated>
+    </task>
+    <task id="LOCAL-00034" summary="JGit was added.">
+      <created>1702173858055</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1702173858055</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Folder is fixed.">
+      <created>1702174199433</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1702174199433</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Class name param is fixed.">
+      <created>1702174464605</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1702174464605</updated>
+    </task>
+    <task id="LOCAL-00037" summary="File path is fixed.">
+      <created>1702175317322</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1702175317322</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Zip file names were fixed.">
+      <created>1702175813881</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1702175813881</updated>
+    </task>
+    <task id="LOCAL-00039" summary="GitManager, ZipManager and WebFileDownloadManager were added.">
+      <created>1702237096809</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1702237096809</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AWS Lambda runner is created." />
@@ -336,8 +398,13 @@
     <MESSAGE value="File structure was fixed." />
     <MESSAGE value="Clone project is fixed." />
     <MESSAGE value="Parameters were added to the shell script." />
-    <MESSAGE value="Class name param is fixed." />
     <MESSAGE value="Params were fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Params were fixed." />
+    <MESSAGE value="JGit was added." />
+    <MESSAGE value="Folder is fixed." />
+    <MESSAGE value="Class name param is fixed." />
+    <MESSAGE value="File path is fixed." />
+    <MESSAGE value="Zip file names were fixed." />
+    <MESSAGE value="GitManager, ZipManager and WebFileDownloadManager were added." />
+    <option name="LAST_COMMIT_MESSAGE" value="GitManager, ZipManager and WebFileDownloadManager were added." />
   </component>
 </project>
