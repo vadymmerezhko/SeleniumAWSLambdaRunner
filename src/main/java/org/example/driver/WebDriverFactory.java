@@ -20,6 +20,8 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
+import static org.example.Settings.DEFAULT_THREADS_COUNT;
+
 public class WebDriverFactory {
     static private final ConcurrentMap<Long, WebDriver> driverMap = new ConcurrentHashMap<>();
     static private final int WAIT_SELENIUM_GRID_TIMEOUT = 30;
