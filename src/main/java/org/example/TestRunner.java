@@ -1,5 +1,6 @@
 package org.example;
 
+import org.apache.maven.shared.invoker.InvocationResult;
 import org.eclipse.jgit.api.Git;
 import org.testng.Assert;
 
@@ -14,7 +15,7 @@ public class TestRunner {
         String className = params[0];
         String methodName = params[1];
         String fileFolderPath = "/tmp/SeleniumAWS/src/test/resources";
-        String fileName = String.format("%s.%s.xml", className, methodName);
+        String fileName = "testngLambda.xml";
         String fileContent = Settings.TEST_NG_METHOD_FILE_TEMPLATE;
         fileContent = fileContent.replace(Settings.CLASS_NAME_PLACEHOLDER, className);
         fileContent = fileContent.replace(Settings.METHOD_NAME_PLACEHOLDER, methodName);
@@ -57,20 +58,30 @@ public class TestRunner {
                                 "\"-DthreadCount=1\" \"-Dlambda=no\"",
                         fileName)};*/
 
-/*                String[] cmd  = String.format(
-                "cd \"/tmp/SeleniumAWS\"; mvn test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/%s\" \"-DthreadCount=1\" \"-Dlambda=no\"",
-                fileName);*/
+        InvocationResult result = MavenManager.run(
+                "/tmp/SeleniumAWS/pom.xml",
+                "test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/testngLambda.xml\" \"-DthreadCount=1\" \"-Dlambda=no\"");
 
-        String[] cmd = {"run-test.sh"};
+       /* String[] cmd  = {
+                //"cd /tmp/SeleniumAWS",
+                "mvn test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/testngLambda.xml\" \"-DthreadCount=1\" \"-Dlambda=no\""
+        };*/
 
-        System.out.println("Run shell file: " + cmd);
+        //String[] cmd = {"run-test.sh"};
+
+/*        System.out.println("Run shell file: " + cmd);
         output = CommandLineExecutor.runCommandLine(cmd);
-        System.out.println("Output:\n" + output);
+        System.out.println("Output:\n" + output);*/
 
-        if (!output.contains("BUILD SUCCESS")) {
+/*        if (!output.contains("BUILD SUCCESS")) {
             Assert.fail(output);
+        }*/
+
+        if (result.getExitCode() != 0) {
+            throw new RuntimeException(result.getExecutionException());
         }
 
-        return output;
+
+        return "";
     }
 }
