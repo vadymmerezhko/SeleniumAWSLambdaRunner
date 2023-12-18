@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38f7719a-163b-4e1d-8b57-eef93eb8e7a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MavenManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="38f7719a-163b-4e1d-8b57-eef93eb8e7a9" name="Changes" comment="Test was enabled. Maven installation was added.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/RunTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Waiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Waiter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/vadym/IdeaProjects/GitHub/SeleniumAWSLabdaTestRunner/pom.xml",
+    "last_opened_file_path": "C:/Users/vadym/IdeaProjects/GitHub/SeleniumAWSLabdaTestRunner/src/main/java/org/example",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -61,6 +57,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vadym\IdeaProjects\GitHub\SeleniumAWSLabdaTestRunner\src\main\java\org\example" />
       <recent name="C:\Users\vadym\IdeaProjects\GitHub\SeleniumAWSLabdaTestRunner" />
       <recent name="C:\Users\vadym\IdeaProjects\GitHub\SeleniumAWSLabdaTestRunner\src\test\resources" />
     </key>
@@ -100,55 +97,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700858595141</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Command is fixed.">
-      <created>1700965014976</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1700965014976</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Command is fixed.">
-      <created>1700965188338</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1700965188338</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Command is fixed.">
-      <created>1700965331744</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1700965331744</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Command is fixed.">
-      <created>1700965418307</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1700965418307</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Command is fixed.">
-      <created>1700965796883</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1700965796883</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Command is fixed.">
-      <created>1700965998785</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1700965998785</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Shell file was added.">
-      <created>1700966481615</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1700966481615</updated>
     </task>
     <task id="LOCAL-00016" summary="Shall command is fixed.">
       <created>1700966584189</created>
@@ -444,7 +392,56 @@
       <option name="project" value="LOCAL" />
       <updated>1702418330725</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Test was enabled.">
+      <created>1702926667636</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1702926667636</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Test was enabled. Maven installation was added.">
+      <created>1702931434992</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1702931434992</updated>
+    </task>
+    <task id="LOCAL-00060" summary="File name is fixed.">
+      <created>1702931732622</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1702931732622</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Test was enabled. Maven installation was added.">
+      <created>1702940843412</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1702940843412</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Selenium was added.">
+      <created>1702942436936</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1702942436936</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Test was enabled. Maven installation was added.">
+      <created>1702943129089</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1702943129089</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Test was enabled. Maven installation was added.">
+      <created>1702943159146</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1702943159146</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,9 +456,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="AWS Lambda runner is created." />
-    <MESSAGE value="Command is fixed." />
-    <MESSAGE value="Shell file was added." />
     <MESSAGE value="Shall command is fixed." />
     <MESSAGE value="Git call was added." />
     <MESSAGE value="Shall file is fixed." />
@@ -477,24 +471,16 @@
     <MESSAGE value="Zip file names were fixed." />
     <MESSAGE value="GitManager, ZipManager and WebFileDownloadManager were added." />
     <MESSAGE value="TestNG file creation moved up." />
-    <MESSAGE value="Test was enabled." />
     <MESSAGE value="Unzip folders are updated." />
     <MESSAGE value="Run test command was fixed." />
     <MESSAGE value="Test is enabled." />
     <MESSAGE value="Run test command is fixed." />
     <MESSAGE value="CLI was fixed." />
     <MESSAGE value="Test was disabled." />
-    <option name="LAST_COMMIT_MESSAGE" value="Test was disabled." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/TestRunner.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Test was enabled." />
+    <MESSAGE value="File name is fixed." />
+    <MESSAGE value="Selenium was added." />
+    <MESSAGE value="Test was enabled. Maven installation was added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test was enabled. Maven installation was added." />
   </component>
 </project>

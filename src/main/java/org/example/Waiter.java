@@ -1,11 +1,12 @@
 package org.example;
 
-import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 
 public class Waiter {
     public static void waitSeconds(int seconds) {
         try {
-            TimeUnit.SECONDS.sleep(seconds);
+            //TimeUnit.SECONDS.sleep(seconds);
+            Thread.sleep(seconds * 1000L);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -13,7 +14,8 @@ public class Waiter {
 
     public static void waitMilliSeconds(int milliSeconds) {
         try {
-            TimeUnit.MICROSECONDS.sleep(milliSeconds);
+            //TmeUnit.MICROSECONDS.sleep(milliSeconds);
+            Thread.sleep(milliSeconds);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
