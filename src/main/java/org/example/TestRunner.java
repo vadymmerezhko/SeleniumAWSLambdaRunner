@@ -41,11 +41,29 @@ public class TestRunner {
                 "/tmp/chromedriver-linux64.zip");
         System.out.println("Chrome driver ZIP is downloaded");
 
+        WebFileDownloadManager.download(
+                "https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip",
+                "/tmp/apache-maven.zip");
+        System.out.println("Maven ZIP is downloaded");
+
         ZipManager.unzip("/tmp/chrome-linux64.zip", "/tmp/bin");
         System.out.println("Chrome browser ZIP is unzipped");
 
         ZipManager.unzip("/tmp/chromedriver-linux64.zip", "/tmp/bin");
         System.out.println("Chrome driver ZIP is unzipped");
+
+        ZipManager.unzip("/tmp/apache-maven.zip.zip", "/tmp/bin");
+        System.out.println("Maven ZIP is unzipped");
+
+        String pathEnvVariable = System.getProperty("PATH");
+        System.setProperty("PATH", pathEnvVariable + ":/tmp/bin/apache-maven-3.9.6/bin");
+        System.out.println("Maven PATH is set up");
+
+/*        String[] cmd = { "mkdir /tmp/.m2" };
+        CommandLineExecutor.runCommandLine(cmd);*/
+
+        System.setProperty("MAVEN_HOME  ", "/tmp");
+        System.out.println("Maven MAVEN_HOME is set up");
 
         //command = String.format("sh run-test.sh %s", fileName);
         //command = "cmd run-test.bat";
@@ -57,6 +75,7 @@ public class TestRunner {
                                 "mvn test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/%s\" " +
                                 "\"-DthreadCount=1\" \"-Dlambda=no\"",
                         fileName)};*/
+
 
         InvocationResult result = MavenManager.run(
                 "/tmp/SeleniumAWS/pom.xml",
