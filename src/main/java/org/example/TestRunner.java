@@ -52,7 +52,7 @@ public class TestRunner {
         ZipManager.unzip("/tmp/chromedriver-linux64.zip", "/tmp/bin");
         System.out.println("Chrome driver ZIP is unzipped");
 
-        ZipManager.unzip("/tmp/apache-maven.zip.zip", "/tmp/bin");
+        ZipManager.unzip("/tmp/apache-maven.zip", "/tmp/bin");
         System.out.println("Maven ZIP is unzipped");
 
         String pathEnvVariable = System.getProperty("PATH");
