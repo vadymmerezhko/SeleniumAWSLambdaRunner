@@ -2,6 +2,9 @@ package org.example;
 
 import org.apache.maven.shared.invoker.InvocationResult;
 import org.eclipse.jgit.api.Git;
+import org.example.driver.WebDriverFactory;
+import org.example.server.TestServer;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import java.io.File;
@@ -58,6 +61,12 @@ public class TestRunner {
         String path = System.getProperty("PATH");
         System.setProperty("PATH", path + ":/tmp/bin/apache-maven-3.9.6/bin");
 
+        WebDriver driver = WebDriverFactory.getDriver();
+        String inputValue = "Selenium";
+        TestServer testServer = new TestServer(driver);
+        String actualValue = testServer.signUp(inputValue);
+        Assert.assertEquals(actualValue, inputValue);
+
         /*       MavenManager.setMavenHome("/tmp/bin/apache-maven-3.9.6");
         MavenManager.setMavenExecutable("/tmp/bin/apache-maven-3.9.6/bin/mvn");
 
@@ -65,18 +74,19 @@ public class TestRunner {
                 "/tmp/SeleniumAWS/pom.xml",
                 "test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/testngLambda.xml\" \"-DthreadCount=1\" \"-Dlambda=no\"");
 */
-        String[] cmd  = {
+/*        String[] cmd  = {
+                "cd /tmp/bin/apache-maven-3.9.6/bin",
                 "mvn test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/testngLambda.xml\" \"-DthreadCount=1\" \"-Dlambda=no\""
-        };
+        };*/
 
         //String[] cmd = {"run-test.sh"};
 
-        output = CommandLineExecutor.runCommandLine(cmd);
+/*        output = CommandLineExecutor.runCommandLine(cmd);
         System.out.println("Output:\n" + output);
 
         if (!output.contains("BUILD SUCCESS")) {
             Assert.fail(output);
-        }
+        }*/
 
 /*        if (result.getExitCode() != 0) {
             if (result.getExecutionException() != null) {
