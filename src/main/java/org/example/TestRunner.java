@@ -55,51 +55,35 @@ public class TestRunner {
         ZipManager.unzip("/tmp/apache-maven.zip", "/tmp/bin");
         System.out.println("Maven ZIP is unzipped");
 
-        String pathEnvVariable = System.getProperty("PATH");
-        System.setProperty("PATH", pathEnvVariable + ":/tmp/bin/apache-maven-3.9.6/bin");
-        System.out.println("Maven PATH is set up");
+        String path = System.getProperty("PATH");
+        System.setProperty("PATH", path + ":/tmp/bin/apache-maven-3.9.6/bin");
 
-/*        String[] cmd = { "mkdir /tmp/.m2" };
-        CommandLineExecutor.runCommandLine(cmd);*/
-
-        System.setProperty("MAVEN_HOME  ", "/tmp");
-        System.out.println("Maven MAVEN_HOME is set up");
-
-        //command = String.format("sh run-test.sh %s", fileName);
-        //command = "cmd run-test.bat";
-/*        String[] cmd = {
-                "/bin/sh",
-                "-c",
-                String.format(
-                        "cd /tmp/SeleniumAWS;" +
-                                "mvn test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/%s\" " +
-                                "\"-DthreadCount=1\" \"-Dlambda=no\"",
-                        fileName)};*/
-
+        /*       MavenManager.setMavenHome("/tmp/bin/apache-maven-3.9.6");
+        MavenManager.setMavenExecutable("/tmp/bin/apache-maven-3.9.6/bin/mvn");
 
         InvocationResult result = MavenManager.run(
                 "/tmp/SeleniumAWS/pom.xml",
                 "test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/testngLambda.xml\" \"-DthreadCount=1\" \"-Dlambda=no\"");
-
-       /* String[] cmd  = {
-                //"cd /tmp/SeleniumAWS",
+*/
+        String[] cmd  = {
                 "mvn test \"-DtestSuite=/tmp/SeleniumAWS/src/test/resources/testngLambda.xml\" \"-DthreadCount=1\" \"-Dlambda=no\""
-        };*/
+        };
 
         //String[] cmd = {"run-test.sh"};
 
-/*        System.out.println("Run shell file: " + cmd);
         output = CommandLineExecutor.runCommandLine(cmd);
-        System.out.println("Output:\n" + output);*/
+        System.out.println("Output:\n" + output);
 
-/*        if (!output.contains("BUILD SUCCESS")) {
+        if (!output.contains("BUILD SUCCESS")) {
             Assert.fail(output);
-        }*/
-
-        if (result.getExitCode() != 0) {
-            throw new RuntimeException(result.getExecutionException());
         }
 
+/*        if (result.getExitCode() != 0) {
+            if (result.getExecutionException() != null) {
+                System.out.println("Exception:\n" + result.getExecutionException().getMessage());
+                throw new RuntimeException(result.getExecutionException());
+            }
+        }*/
 
         return "";
     }
