@@ -65,6 +65,9 @@ public class TestRunner {
         String inputValue = "Selenium";
         TestServer testServer = new TestServer(driver);
         String actualValue = testServer.signUp(inputValue);
+
+        System.out.println("Actual test output: " + actualValue);
+
         Assert.assertEquals(actualValue, inputValue);
 
         /*       MavenManager.setMavenHome("/tmp/bin/apache-maven-3.9.6");
@@ -95,6 +98,6 @@ public class TestRunner {
             }
         }*/
 
-        return "";
+        return actualValue;
     }
 }
