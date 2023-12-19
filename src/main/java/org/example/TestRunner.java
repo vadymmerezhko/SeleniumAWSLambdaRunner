@@ -1,7 +1,7 @@
 package org.example;
 
 import org.apache.maven.shared.invoker.InvocationResult;
-import org.eclipse.jgit.api.Git;
+//import org.eclipse.jgit.api.Git;
 import org.example.driver.WebDriverFactory;
 import org.example.server.TestServer;
 import org.openqa.selenium.WebDriver;
@@ -26,28 +26,28 @@ public class TestRunner {
         String command;
         String output;
 
-        GitManager.cloneRepository(
+/*        GitManager.cloneRepository(
                 "https://github.com/vadymmerezhko/SeleniumAWS.git",
                 "/tmp/SeleniumAWS");
         System.out.println("Git repository is cloned");
 
         FileManager.createFile(fileFolderPath, fileName, fileContent);
-        System.out.println("TestNG file is created");
+        System.out.println("TestNG file is created");*/
 
         WebFileDownloadManager.download(
-                "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.71/linux64/chrome-linux64.zip",
+                "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.109/linux64/chrome-linux64.zip",
                 "/tmp/chrome-linux64.zip");
         System.out.println("Chrome browser ZIP is downloaded");
 
         WebFileDownloadManager.download(
-                "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.71/linux64/chromedriver-linux64.zip",
+                "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.109/linux64/chromedriver-linux64.zip",
                 "/tmp/chromedriver-linux64.zip");
         System.out.println("Chrome driver ZIP is downloaded");
 
-        WebFileDownloadManager.download(
+/*        WebFileDownloadManager.download(
                 "https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip",
                 "/tmp/apache-maven.zip");
-        System.out.println("Maven ZIP is downloaded");
+        System.out.println("Maven ZIP is downloaded");*/
 
         ZipManager.unzip("/tmp/chrome-linux64.zip", "/tmp/bin");
         System.out.println("Chrome browser ZIP is unzipped");
@@ -55,8 +55,8 @@ public class TestRunner {
         ZipManager.unzip("/tmp/chromedriver-linux64.zip", "/tmp/bin");
         System.out.println("Chrome driver ZIP is unzipped");
 
-        ZipManager.unzip("/tmp/apache-maven.zip", "/tmp/bin");
-        System.out.println("Maven ZIP is unzipped");
+/*        ZipManager.unzip("/tmp/apache-maven.zip", "/tmp/bin");
+        System.out.println("Maven ZIP is unzipped");*/
 
         String path = System.getProperty("PATH");
         System.setProperty("PATH", path + ":/tmp/bin/apache-maven-3.9.6/bin");
